@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Robot Juggling</title>
+
+		<meta name="description" content="Controlling the Cascade">
+		<meta name="author" content="Kai Ploeger">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+        <link rel="stylesheet" href="dist/theme/white.css" id="theme">
+
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+
+   	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-auto-animate>
+					<img data-id="title_pic" src="./media/Juggling_Robot.jpg" alt="reveal.js logo" class="r-stretch"></img>
+					<h3 data-id="caption-animation">Robot Juggling</h3>
+					<p>
+						<a href="https://www.ias.informatik.tu-darmstadt.de/Team/KaiPloeger">Kai Ploeger</a>
+					</p>
+				</section>
+
+			    <section data-auto-animate data-transition="fade">
+					<h3 data-id="title-animation-rl">Reinforcement Learning / Open Loop</h3>
+					<img src="./media/front_img_big.png" alt="Juggling Robot" class="r-stretch">
+				</section>
+
+				<section data-auto-animate>
+						<h3 data-id="title-animation-rl">Reinforcement Learning / Open Loop</h3>
+						<video src="./media/learning_to_juggle_grid.mp4" data-autoplay="" data-paused-by-reveal=""></video>
+				</section>
+
+				<section data-auto-animate>
+						<h3 data-id="title-animation-rl">Reinforcement Learnin / Open Loop</h3>
+						<img src="./media/violin_real_points.svg" style="width: 110vw;"></img>
+				</section>
+
+                <section data-auto-animate>
+                    <h3 data-id="title-animation-plan">Planning / Closed Loop</h3>
+                    <video src="./media/5b_floating_all_constraints_time_ramped.mov" data-autoplay="" data-paused-by-reveal=""></video>
+                </section>
+
+                <section data-auto-animate>
+                    <h3 data-id="title-animation-plan">Planning / Closed Loop</h3>
+                    <video src="./media/5_ball_quarter_speed.mov" data-autoplay="" data-paused-by-reveal=""></video>
+                </section>
+
+                <section data-transition="fade">
+                    <video src="./media/17_ball_quarter_speed.mov" data-autoplay="" data-paused-by-reveal=""></video>
+                </section>
+
+            </div>
+        </div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/math/math.js"></script>
+		<script>
+			Reveal.initialize({ controls: true, progress: true, center: true, hash: true,
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMath.MathJax2 ]
+			});
+		</script>
+	</body>
+</html>
